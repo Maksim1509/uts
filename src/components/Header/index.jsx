@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../Bitmap.svg';
+import logo from '../../Bitmap.svg';
+import './header.scss';
 
 const Header = () => {
   const header = (

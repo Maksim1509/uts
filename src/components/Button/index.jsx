@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './button.scss';
 
 const Button = (props) => {
   const textBtn = props.text;

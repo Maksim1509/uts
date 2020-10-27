@@ -1,0 +1,38 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 45px;
+  background: #33495F;
+}
+
+.lights {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 56px;
+  height: 12px;
+  left: 21px;
+}
+
+.lights-item {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+  &--red {
+    background: #FF6052;
+  border: 1px solid #E43C2F;
+  }
+  &--yellow {
+    background: #FFC107;
+    border: 1px solid #E29E00;
+  }
+  &--green {
+    background: #15CC35;
+    border: 1px solid #00AD1B;
+  }
+}

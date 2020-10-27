@@ -1,0 +1,134 @@
+.sidebar-container {
+
+}
+.sidebar {
+  padding-top: 30px;
+  padding-left: 30px;
+  background-color: #DADADA;
+  width: 202px;
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(142, 142, 147, .1);
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-title {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #8F929D;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #8E8E93;
+}
+.nav-item--active {
+  color: #4C4F59;
+}
+.nav-icon {
+  margin-right: 10px;
+  fill: #8E8E93;
+}
+
+.nav-icon--active {
+  fill: #4C4F59;
+}
+
+.sidebar-lists {
+  display: flex;
+  flex-direction: column;
+  width: 151px;
+  margin: 20px 0;
+  padding: 20px 0;
+  font-size: 15px;
+  line-height: 18px;
+  color: #8F929D;
+  border-top: 1px solid rgba(142, 142, 147, .1);
+  border-bottom: 1px solid rgba(142, 142, 147, .1);
+  span {
+    margin-top: 20px;
+    color: #8E8E93;
+    font-size: 13px;
+    line-height: 16px;
+    cursor: pointer;
+  }
+}
+
+
+.sidebar-labels {
+  padding: 20px 0 40px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #8F929D;
+}
+
+.labels-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 21px;
+}
+.labels-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 16px;
+  cursor: pointer;
+  &:hover {
+    color: #4C4F59;
+  }
+}
+
+
+.marker {
+  width: 8px;
+  height: 8px;
+  margin-right: 13px;
+  border-radius: 100px;
+  &--purple {
+    border: 2px solid #9200FF;
+  }
+  &--orange {
+    border: 2px solid #FF7100;
+  }
+  &--yellow {
+    border: 2px solid #D0DB00;
+  }
+  &--blue {
+    border: 2px solid #00DCFF;
+  }
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  box-sizing: border-box;
+  width: 202px;
+  height: 60px;
+  padding: 12px 0 12px 15px;
+  background: #DADADA;
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}

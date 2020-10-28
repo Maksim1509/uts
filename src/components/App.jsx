@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './Header/';
-import SideBarMenu from './SideBarMenu/';
-import Mailbox from './Mailbox';
+import Header from './Header';
+import SideBarMenu from './SideBarMenu';
+import MailBox from './MailBox';
 import Content from './Content';
 import Profile from './Profile';
 
@@ -14,7 +14,7 @@ const App = () => {
             <SideBarMenu />
             <Profile />
           </div>
-          <Mailbox />
+          <MailBox />
           <Content />
         </main>
     </div>

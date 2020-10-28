@@ -1,0 +1,32 @@
+.search {
+  position: relative;
+}
+.search-input {
+  width: 275px;
+  height: 45px;
+  background: #FFFFFF;
+  border: 1px solid rgba(151, 151, 151, 0.101591);
+  box-sizing: border-box;
+  border-radius: 21.5px;
+  vertical-align: middle;
+  padding-left: 46px;
+  outline: none;
+    &::placeholder {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #65676E;
+    opacity: 0.3;
+  }
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
+
+.search-icon {
+  position: absolute;
+  top: 15px;
+  left: 21px;
+}

@@ -1,0 +1,101 @@
+.mailBox {
+  padding-top: 31px;
+  background-color: #F9F9F9;;
+  box-sizing: border-box;
+  width: 334px;
+}
+
+.mailBox-search {
+  padding-left: 27px;
+  padding-right: 32px;
+}
+
+.mailBox-header {
+  box-sizing: border-box;
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #4C4F59;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  padding-bottom: 6px;
+}
+
+.mailBox-sort-select {
+  font-size: 13px;
+  line-height: 16px;
+  color: #484C51;
+}
+
+.mailBox-messages {
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  height: 638px;
+  overflow-y: scroll;
+}
+
+.message {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 90px;
+  padding: 25px 0;
+  padding-left: 18px;
+  padding-right: 25px;
+  cursor: pointer;
+  &--selected {
+    border-left: 3px solid #379AFF;
+    background-color: #FFFFFF;
+  }
+}
+
+.message-break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.message-preview {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-grow: 1;
+}
+
+.message-theme {
+  flex-grow: 1;
+}
+.message-time, .message-theme {
+  color: #4C4F59;
+}
+
+.message-autor {
+  flex-grow: 1;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #A3A3A8;
+}
+
+.message-marker {
+  width: 7px;
+  height: 7px; 
+  background: #379AFF;
+  flex-basis: 7px;
+  border-radius: 50%;
+  margin-top: 4px;
+  margin-right: 5px;
+  &--read {
+    opacity: 0;
+  }
+}

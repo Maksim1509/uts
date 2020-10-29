@@ -2,30 +2,35 @@ import React, { useState } from 'react';
 import cn from 'classnames';
 import './index.scss';
 import Search from '../Search';
-import AttachmentIcon from '../icons/AttachmentIcon'
+import AttachmentIcon from '../icons/AttachmentIcon';
 import messagesData from './messages-data';
 
 const MailBox = () => {
-
 // [{ id, autor, theme, time, isRead }, {...}]
 
   const [messages] = useState(messagesData);
   const [messageSelected, setMessageSelected] = useState(1);
-  console.log(messageSelected)
   const selectMessageHandler = (id) => () => {
     setMessageSelected(id);
   };
 
-  const renderMessage = ({ id, author, theme, time, isRead, hasAttachment }) => {
+  const renderMessage = ({
+    id, author, theme, time, isRead, hasAttachment,
+  }) => {
     const makretClasses = cn({ 'message-marker': true, 'message-marker--read': isRead });
     const messageClasses = cn({ message: true, 'message--selected': id === messageSelected });
     return (
-      <div key={id} className={messageClasses} onClick={selectMessageHandler(id)}>
-        <div className={makretClasses}></div>
+      <div
+        key={id}
+        className={messageClasses}
+        onClick={selectMessageHandler(id)}
+        onKeyPress={() => {}}
+      >
+        <div className={makretClasses} />
         <div className="message-preview">
           <span className="message-theme">{theme}</span>
           <time className="message-time">{time}</time>
-          <div className="message-break"></div>
+          <div className="message-break" />
           <span className="message-autor">{author}</span>
           {hasAttachment && <AttachmentIcon />}
         </div>

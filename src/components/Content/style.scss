@@ -1,0 +1,166 @@
+.content {
+  max-width: 558px;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.content-line {
+  width: 495px;
+  height: 1px;
+  background-color: #F4F4F4;
+  margin: 0 auto;
+}
+//-----------------------------------------
+
+.content-menu {
+  display: flex;
+  padding: 30px 0;
+  padding-left: 30px;
+  border-bottom: 1px solid rgba(151, 151, 151, .1);
+}
+
+.content-menu-item {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid #8E8E93;
+  cursor: pointer;
+}
+
+//-----------------------------------------
+
+.content-header {
+  box-sizing: border-box;
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+
+  height: 133px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 35px 14.5px 24px;
+}
+
+.content-header-title {
+  width: 100%;
+  font-size: 24px;
+  line-height: 29px;
+  color: #4C4F59;
+  margin-bottom: 18.67px;
+}
+
+.content-author {
+  width: 100%;
+  height: 45px;
+  display: flex;
+}
+
+.author-avatar {
+  margin-right: 10px;
+  background: #D8D8D8;
+  border-radius: 27px;
+}
+
+.autor-data {
+  flex-basis: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  time {
+    flex-basis: 100%;
+    font-size: 13px;
+    line-height: 16px;
+    opacity: 0.3;
+  }
+}
+
+.author-name {
+  font-size: 18px;
+  line-height: 21px;
+  color: #4C4F59;
+  margin-bottom: 5px;
+}
+
+.author-email {
+  color: #4C4F59;
+  i {
+    font-style: normal;
+    color: #6B6E7F;
+  }
+}
+//---------------------------------
+
+.content-body {
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #65676E;
+
+  width: 100%;
+  height: 319px;
+  padding: 0 18px 25px 28px;
+}
+
+//-----------------
+
+.content-footer {
+  width: 100%;
+  padding: 20px 0 39px 28px;
+}
+
+.footer-attacment {
+  width: 110.96px;
+  height: 45px;
+  margin-bottom: 40px;
+  border: 1px solid rgba(142, 142, 147, 0.1);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 8px 0 7px 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  cursor: pointer;
+  &-text {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(46, 46, 46, .5);
+  }
+}
+
+.logo-pdf {
+  height: 30px;
+  position: relative;
+  margin-right: 4px;
+  &-text {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 9px;
+    color: #FFFFFF;
+  }
+}
+
+.footer-button {
+  display: inline-block;
+  margin-right: 15px;
+}
